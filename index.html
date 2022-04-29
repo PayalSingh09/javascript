@@ -1,0 +1,42 @@
+<html>
+    <head>
+
+    </head>
+    <body onload="bodyOnload()">
+        <button onclick="alertFn()">Click</button>
+        <input onchange="trackChange()" />
+        <button onmouseover="mover()">On Mouse Hover</button>
+        <button onmouseout="moverOut()">On Mouse out</button>
+        <input onkeydown="keyDownFn()" />
+        <input onkeyup="keyUpFn()" />
+    </body>
+    <script>
+        function alertFn(){
+            alert('Hi');
+        }
+        function trackChange(){
+            alert('Some changes occured');
+        }
+
+        function mover(){
+            alert('Mouse Over');
+
+        }
+
+        function moverOut(){
+            alert('Mouse out');
+        }
+
+        function keyDownFn(){
+            alert('Key Down');
+        }
+
+        function keyUpFn(){
+            alert('Up Function');
+        }
+
+        function bodyOnload(){
+            alert('This occurs on body Load');
+        }
+    </script>
+</html>
